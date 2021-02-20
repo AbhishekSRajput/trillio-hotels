@@ -1,0 +1,43 @@
+//layout
+
+.container {
+	max-width: 120rem;
+	margin: 8rem auto;
+	background-color: var(--color-grey-light-1);
+	box-shadow: var(--shadow-dark);
+
+	min-height: 50rem;
+	border-radius: 1px;
+
+	@media screen and (max-width: 75em) {
+		margin: 0;
+		max-width: 100%;
+	}
+}
+
+.header {
+	height: 7rem;
+	background-color: #fff;
+	border-bottom: 1px solid var(--color-grey-light-2);
+
+	@media screen and (max-width: 31.25em) {
+		height: 12rem;
+	}
+}
+
+.content {
+	display: flex;
+
+	@media screen and (max-width: 56.25em) {
+		flex-direction: column;
+	}
+}
+
+.sidebar {
+	background-color: var(--color-grey-dark-1);
+	flex: 0 1 18%;
+}
+
+.hotel-view {
+	flex: 1;
+}

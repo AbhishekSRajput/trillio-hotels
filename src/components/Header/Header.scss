@@ -1,0 +1,137 @@
+.header-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 31.5em) {
+		flex-wrap: wrap;
+		align-content: space-around;
+	}
+}
+
+.logo {
+	height: 3.23rem;
+	margin-left: 3rem;
+
+	cursor: pointer;
+}
+
+.search {
+	flex: 0 0 40%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media screen and (max-width: 31.25em) {
+		order: 1;
+		flex: 0 0 90%;
+		margin-left: 1.2rem;
+	}
+
+	&__input {
+		font-size: 1.8rem;
+		font-family: inherit;
+
+		background-color: var(--color-grey-light-2);
+		border: none;
+		color: inherit;
+		padding: 0.7rem 2rem;
+		border-radius: 100px;
+		width: 90%;
+		transition: all 0.6s;
+		margin-right: -3.5rem;
+
+		&:focus {
+			outline: none;
+			width: 100%;
+			background-color: var(--color-grey-light-3);
+		}
+
+		&::-webkit-input-placeholder {
+			font-weight: 100;
+			font-size: 1.6rem;
+			color: var(--color-grey-light-4);
+		}
+	}
+
+	&__input:focus + &__button {
+		background-color: var(--color-grey-light-3);
+	}
+
+	&__button {
+		border: none;
+		cursor: pointer;
+		background-color: var(--color-grey-light-2);
+
+		&:focus {
+			outline: none;
+		}
+
+		&:active {
+			transform: translateY(2px);
+		}
+	}
+
+	&__icon {
+		height: 2rem;
+		width: 2rem;
+		fill: var(--color-primary);
+	}
+}
+
+.user-nav {
+	align-self: stretch;
+
+	display: flex;
+	align-items: center;
+
+	//user-nav and all the direct children
+	& > * {
+		padding: 0 2rem;
+		cursor: pointer;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	& > *:hover {
+		background-color: var(--color-grey-light-2);
+	}
+
+	&__nav-box {
+		position: relative;
+	}
+
+	&__icon {
+		height: 2.25rem;
+		width: 2.25rem;
+		fill: var(--color-grey-dark-2);
+	}
+
+	&__notification {
+		font-size: 0.8rem;
+		width: 1.75rem;
+		height: 1.75rem;
+		border-radius: 50%;
+		background-color: var(--color-primary);
+		color: #fff;
+		position: absolute;
+		top: 1.5rem;
+		right: 1rem;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__user-img {
+		height: 3.5rem;
+		border-radius: 50%;
+	}
+	&__user-name {
+		margin-left: 0.9rem;
+		font-size: 1.4rem;
+	}
+}
