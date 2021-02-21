@@ -1,3 +1,7 @@
+this project is done under udemy instructor jonas schmedtmann
+
+Project is deployed using gh-pages on github :- https://apcgamer.github.io/trillio-hotels-react/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
